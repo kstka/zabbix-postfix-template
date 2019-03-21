@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-03-21T15:18:19Z</date>
+    <date>2019-03-21T16:14:38Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -28,7 +28,7 @@
                     <type>3</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>net.tcp.service[smtp,{$POSTFIX_SMTP_IP},25]</key>
+                    <key>net.tcp.service[smtp]</key>
                     <delay>1m</delay>
                     <history>1w</history>
                     <trends>365d</trends>
@@ -912,12 +912,7 @@
             </items>
             <discovery_rules/>
             <httptests/>
-            <macros>
-                <macro>
-                    <macro>{$POSTFIX_SMTP_IP}</macro>
-                    <value>{HOST.IP}</value>
-                </macro>
-            </macros>
+            <macros/>
             <templates/>
             <screens/>
         </template>
@@ -1004,7 +999,7 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template App Postfix:net.tcp.service[smtp,{$POSTFIX_SMTP_IP},25].max(#3)}=0</expression>
+            <expression>{Template App Postfix:net.tcp.service[smtp].max(#3)}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>SMTP service is down on {HOST.NAME}</name>
