@@ -1,5 +1,6 @@
 # zabbix-postfix-template
 Zabbix template for Postfix SMTP server
+
 Works for Zabbix 4.x
 
 Forked from http://admin.shamot.cz/?p=424
@@ -24,7 +25,7 @@ Forked from http://admin.shamot.cz/?p=424
 
     cp userparameter_postfix.conf /etc/zabbix/zabbix_agentd.d/
     
-    # run **visudo** as root
+    # run visudo as root
     zabbix ALL=(ALL) NOPASSWD: /usr/bin/zabbix-postfix-stats.sh
     
     systemctl restart zabbix-agent
