@@ -16,10 +16,11 @@ Forked from http://admin.shamot.cz/?p=424
     # for CentOS
     yum install postfix-perl-scripts
     
-    cp pygtail.py /usr/sbin/
-    chmod +x /usr/sbin/pygtail.py
+    # install pygtail with pip
+    pip install pygtail
     
     # ! check MAILLOG path in zabbix-postfix-stats.sh
+    # ! check path for pip executables
     cp zabbix-postfix-stats.sh /usr/bin/
     chmod +x /usr/bin/zabbix-postfix-stats.sh
 
