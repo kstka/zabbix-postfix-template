@@ -21,7 +21,7 @@ Forked from http://admin.shamot.cz/?p=424
     pip install pygtail
     
     # ! check MAILLOG path in zabbix-postfix-stats.sh
-    # ! check path for pygtale executable
+    # ! check path for pygtail executable
     cp zabbix-postfix-stats.sh /usr/bin/
     chmod +x /usr/bin/zabbix-postfix-stats.sh
 
