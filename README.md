@@ -16,11 +16,12 @@ Forked from http://admin.shamot.cz/?p=424
     # for CentOS
     yum install postfix-perl-scripts
     
-    # install pygtail with pip
+    # install pygtail using pip
+    # alternatively you can manually install pygtail and specify the executable-path in zabbix-postfix-status.sh
     pip install pygtail
     
     # ! check MAILLOG path in zabbix-postfix-stats.sh
-    # ! check path for pip executables
+    # ! check path for pygtale executable
     cp zabbix-postfix-stats.sh /usr/bin/
     chmod +x /usr/bin/zabbix-postfix-stats.sh
 
