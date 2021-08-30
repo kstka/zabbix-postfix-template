@@ -1,9 +1,9 @@
 # zabbix-postfix-template
 Zabbix template for Postfix SMTP server
 
-Works for Zabbix 4.x
+Tested on zabbix 5.4.3 and Python3
 
-Forked from http://admin.shamot.cz/?p=424
+originally orked from http://admin.shamot.cz/?p=424 , I forked it from kstka/zabbix-postfix-template
 
 # Requirements
 * [pflogsum](http://jimsun.linxnet.com/postfix_contrib.html)
